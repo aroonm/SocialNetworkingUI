@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.socialnetworkingui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.socialnetworkingui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.socialnetworkingui.Contacts"
+            android:label="Contacts" >
+            <intent-filter>
+                <action android:name="com.example.socialnetworkingui.CONTACTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.socialnetworkingui.DemoActivity"
+            android:label="Demo" >
+            <intent-filter>
+                <action android:name="com.example.socialnetworkingui.DEMOACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.socialnetworkingui.User"
+            android:label="User" >
+            <intent-filter>
+                <action android:name="com.example.socialnetworkingui.USER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.socialnetworkingui.UserInfo"
+            android:label="Info" >
+            <intent-filter>
+                <action android:name="com.example.socialnetworkingui.USERINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.socialnetworkingui.Photos"
+            android:label="Photos" >
+            <intent-filter>
+                <action android:name="com.example.socialnetworkingui.PHOTOS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.socialnetworkingui.Likes"
+            android:label="Likes" >
+            <intent-filter>
+                <action android:name="com.example.socialnetworkingui.LIKES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.socialnetworkingui.Chat"
+            android:label="Chat" >
+            <intent-filter>
+                <action android:name="com.example.socialnetworkingui.CHAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+    </application>
+
+</manifest>

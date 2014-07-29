@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity" >
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:collapsedHeight="69dp"
+        sothree:dragView="@+id/profile"
+        sothree:shadowHeight="4dp" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/displaypicture" />
+
+            <LinearLayout
+                android:id="@+id/onlinestatusPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/geographyPanel"
+                android:layout_margin="0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="20"
+                    android:text="Aroon"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:id="@+id/name_uline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/name_uline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/geographyPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lastseenPanel"
+                android:layout_margin="0dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <Button
+                    android:id="@+id/markerpos"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:alpha="0.8"
+                    android:background="#7b7f98"
+                    android:drawableStart="@drawable/marker"
+                    android:text="Chennai"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/pointerpos"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:alpha="0.8"
+                    android:background="#7b7f98"
+                    android:drawableStart="@drawable/pointer"
+                    android:gravity="center"
+                    android:text="8.2 km away"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lastseenPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/likePanel"
+                android:layout_margin="0dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <Button
+                    android:id="@+id/lastseentime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:alpha="0.8"
+                    android:background="#7b7f98"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    android:text="Last seen at 12:00 pm"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/likePanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mainpanel"
+                android:layout_margin="0dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <Button
+                    android:id="@+id/like1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:alpha="0.8"
+                    android:background="#000000"
+                    android:drawableEnd="@drawable/seperator"
+                    android:gravity="center"
+                    android:text="books"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/like2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:alpha="0.8"
+                    android:background="#000000"
+                    android:drawableEnd="@drawable/seperator"
+                    android:gravity="center"
+                    android:text="music"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/like3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:alpha="0.8"
+                    android:background="#000000"
+                    android:drawableEnd="@drawable/seperator"
+                    android:gravity="center"
+                    android:text="math"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/like_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:text="+12"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainpanel"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/main_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:background="#00ff00"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#8649c8"
+                    android:drawableStart="@drawable/profile"
+                    android:gravity="bottom"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#a75ada"
+                    android:drawableStart="@drawable/photos"
+                    android:gravity="center_vertical|right"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#df6aa1"
+                    android:drawableStart="@drawable/likes"
+                    android:gravity="center_vertical|right"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffd36a"
+                    android:drawableStart="@drawable/chat"
+                    android:gravity="center_vertical|right"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:scaleType="fitStart" >
+            </ImageView>
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>

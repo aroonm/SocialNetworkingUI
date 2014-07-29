@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/profilepicture" />
+
+    <LinearLayout
+        android:id="@+id/relationship"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <Button
+            android:id="@+id/reltitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#f3f4f8"
+            android:drawableLeft="@drawable/relationabout"
+            android:drawablePadding="25dp"
+            android:drawingCacheQuality="high"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingLeft="75dp"
+            android:paddingTop="15dp"
+            android:text="RELATIONSHIP"
+            android:textColor="#8649c8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="#f3f4f8"
+            android:clickable="false"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingLeft="75dp"
+            android:text="Single"
+            android:textColor="#51515b"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relationship"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <Button
+            android:id="@+id/loctitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:drawableLeft="@drawable/locinfo"
+            android:drawablePadding="32dp"
+            android:drawingCacheQuality="high"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingLeft="75dp"
+            android:paddingTop="15dp"
+            android:text="LOCATION"
+            android:textColor="#8649c8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingLeft="75dp"
+            android:paddingRight="30dp"
+            android:text="Johannesburg"
+            android:textColor="#51515b"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <Button
+            android:id="@+id/abouttitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f4f8"
+            android:drawableLeft="@drawable/about"
+            android:drawablePadding="32dp"
+            android:drawingCacheQuality="high"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="ABOUT ME"
+            android:textColor="#8649c8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="#f3f4f8"
+            android:clickable="false"
+            android:gravity="left"
+            android:paddingBottom="30dp"
+            android:paddingLeft="75dp"
+            android:paddingRight="30dp"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:textColor="#51515b"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalinfotitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aboutme"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <Button
+            android:id="@+id/personalinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#e1e5ee"
+            android:gravity="left"
+            android:paddingBottom="20dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:text="PERSONAL INFO"
+            android:textColor="#494c63"
+            android:textScaleX="1.1"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainpanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/personalinfotitle"
+        android:layout_margin="0dp"
+        android:gravity="bottom"
+        android:padding="0dp" >
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="#8649c8"
+            android:drawableStart="@drawable/profile" />
+
+        <Button
+            android:id="@+id/photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#a75ada"
+            android:drawableStart="@drawable/photos" />
+
+        <Button
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#df6aa1"
+            android:drawableStart="@drawable/likes" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffd36a"
+            android:drawableStart="@drawable/chat" />
+    </LinearLayout>
+
+</RelativeLayout>

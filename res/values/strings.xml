@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SocialNetworkingUI</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello"><![CDATA[]]></string>
+    <string name="slide"><![CDATA[]]></string>
+
+</resources>
+
